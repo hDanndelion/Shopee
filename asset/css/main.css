@@ -27,12 +27,14 @@
 }
 
 .header__navbar-item-link:hover {
-    color: hsla(0,0%,100%,.7);
+    color: hsla(0, 0%, 100%, .7);
 }
 
 .header__navbar-item--separate {
-    border-right:1px solid #FA8E82;
+    border-right: 1px solid #FA8E82;
+    position: relative;
 }
+
 /* Chỉnh dấu gạch dọc mà k bị phụ thuộc:
 Cần position: relative nó (Class .header__navbar-item)
 .header__navbar-item--separate::after {
@@ -45,3 +47,72 @@ Cần position: relative nó (Class .header__navbar-item)
     top: 50%;
     transform: translateY(-50%);
 } */
+
+.header__navbar-icon {
+    margin: 0 4px;
+    font-size: 1.6rem;
+}
+
+/* Header QRcode */
+
+.header__QRcode {
+    display: none;
+    width: 160px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 8px;
+    animation: fadeIn ease-in-out 0.3s;
+}
+
+/* Khi chỉnh QRcode thấp xuống, thay vì padding,
+rồi chỉnh background các kiểu để dùng top = 100%,
+hoàn toàn có thể dùng thẻ giả ::before */
+/* top = 150% */
+/* header__QRcode {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 24px
+    left: 0;
+    top: -16px; */
+
+.header__QRcode-apps {
+    display: flex;
+}
+
+.header__QRcode-apps div {
+    flex: 1;
+    padding: 0 8px;
+    background-color: var(--white-corlor);
+}
+
+.header__QRcode-apps-dow img {
+    width: 100%;
+}
+
+/* :nth-child(number) */
+.header__QRcode-apps-dow:first-child {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.header__navbar-item--hov:hover .header__QRcode {
+    display: initial;
+}
+
+.header__QRcode img {
+    display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
