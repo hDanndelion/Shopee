@@ -3,6 +3,14 @@
     background-image: linear-gradient(0, #f63, #f53d2d);
 }
 
+ul {
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 .header__navbar {
     display: flex;
     justify-content: space-between;
@@ -10,7 +18,6 @@
 
 .header__navbar-list {
     list-style: none;
-    padding-left: 0px;
 }
 
 .header__navbar-item {
@@ -63,6 +70,7 @@ Cần position: relative nó (Class .header__navbar-item)
     top: 100%;
     padding-top: 8px;
     animation: fadeIn ease-in-out 0.3s;
+    z-index: 99999999;
 }
 
 /* Khi chỉnh QRcode thấp xuống, thay vì padding,
@@ -114,5 +122,163 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
     to {
         opacity: 1;
+    }
+}
+
+.header__navbar-list:last-child .header__navbar-item:first-child {
+    position: relative;
+}
+
+.header__navbar-notify {
+    position: absolute;
+    background-color: var(--white-corlor);
+    border: 1px solid rgb(172, 171, 171);
+    right: 0;
+    margin-top: 8px;
+    width: 400px;
+    z-index: 999999999;
+}
+
+.header__navbar-notify::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -19px;
+    right: 26px;
+    border: var(--white-corlor) solid;
+    border-width: 10px 16px;
+    border-left-color: transparent;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+}
+
+.header__navbar-notify::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -18px;
+    right: 0;
+    width: 50%;
+    height: 18px;
+}
+
+.notify__top {
+    display: block;
+    background: url(../img/user.png) 50% 35% / 25% no-repeat;
+    height: 310px;
+}
+
+.notify__top > p {
+    position: absolute;
+    color: var(--black-corlor);
+    bottom: 30%;
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.notify__down {
+    display: flex;
+}
+
+.notify__down-item {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--black-corlor);
+    background-color: #F5F5F5;
+}
+
+.notify__down-item:hover {
+    background-color: #E8E8E8;
+    color: #EE4D2D;
+}
+
+.header__navbar-notify {
+    display: none;
+}
+
+.header__navbar-list:last-child .header__navbar-item:first-child:hover .header__navbar-notify {
+    display: block;
+}
+
+/* notify logged */
+.notify__list {
+    list-style: none;
+    overflow: auto;
+    max-height: 850px;
+    animation: zoomInOut ease-in-out 3s;
+}
+
+.notify__list-item {
+    color: var(--black-corlor);
+}
+
+.notify__list-item--viewed {
+    background-color: rgba(238, 82, 52, 0.1);
+}
+
+.notify__list-item:first-child,
+.notify__list-item:last-child {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.notify__list-item-head,
+.notify__list-item-foot {
+    text-decoration: none;
+    color: var(--black-corlor);
+    display: block;
+    padding: 12px;
+}
+
+.notify__list-item-link {
+    display: flex;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--black-corlor);
+}
+
+
+.notify__list-item-link:hover {
+    background-color: #f8f8f8;
+}
+
+.notify__list-item-img {
+    margin-right: 4px;
+}
+
+.notify__list-item-img img {
+    width: 40px;
+}
+
+.item_info {
+    opacity: 0.8;
+}
+
+.item_info-name {
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.item_info-sub {
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.item_info-img {
+    width: 100%;
+}
+
+@keyframes zoomInOut {
+    from {
+        
+    }
+    to {
+        
     }
 }
