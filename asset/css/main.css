@@ -200,6 +200,8 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__navbar-notify {
     display: none;
+    transform-origin: calc(100% - 40px) top;
+    animation: zoomInOut ease-in 0.2s;
 }
 
 .header__navbar-list:last-child .header__navbar-item:first-child:hover .header__navbar-notify {
@@ -211,7 +213,6 @@ hoàn toàn có thể dùng thẻ giả ::before */
     list-style: none;
     overflow: auto;
     max-height: 850px;
-    animation: zoomInOut ease-in-out 3s;
 }
 
 .notify__list-item {
@@ -276,9 +277,9 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 @keyframes zoomInOut {
     from {
-        
+        transform: scale(0);
     }
     to {
-        
+        transform: scale(1);
     }
 }
