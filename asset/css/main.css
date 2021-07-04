@@ -202,6 +202,9 @@ hoàn toàn có thể dùng thẻ giả ::before */
     display: none;
     transform-origin: calc(100% - 40px) top;
     animation: zoomInOut ease-in 0.2s;
+    will-change: opacity, transform;
+    /* Thuộc tính này để khai báo cho trình duyệt biết
+    để tối ưu chuyển động */
 }
 
 .header__navbar-list:last-child .header__navbar-item:first-child:hover .header__navbar-notify {
@@ -278,8 +281,10 @@ hoàn toàn có thể dùng thẻ giả ::before */
 @keyframes zoomInOut {
     from {
         transform: scale(0);
+        opacity: 0;
     }
     to {
         transform: scale(1);
+        opacity: 1;
     }
 }
