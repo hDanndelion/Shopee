@@ -305,6 +305,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 16px;
     padding-top: 36px;
 }
 
@@ -388,9 +389,27 @@ hoàn toàn có thể dùng thẻ giả ::before */
 }
 
 .auth-form_socials-title {
-    margin: 0 32px;
+    margin: 0 40px;
 }
 
 .auth-form__socials--gg {
     color: #666;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--basic-corlor);
+}
+
+.auth-form__sepa {
+    display: block;
+    height: 16px;
+    margin: 0 16px;
+    border-left: 1px solid var(--border-corlor);
 }
