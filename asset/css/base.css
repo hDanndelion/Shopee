@@ -4,9 +4,12 @@
     --text-corlor: #333;
     --basic-corlor: #ee5234;
     --border-corlor: #dbdbdb;
+    --narbar-height: 34px;
+    --header-height: 120px;
+    --search-height: calc(var(--header-height) - var(--narbar-height));
 }
 
-*{
+* {
     box-sizing: inherit;
 }
 
@@ -113,6 +116,7 @@ html {
         transform: scale(0);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -123,6 +127,7 @@ html {
     from {
         transform: scale(var(--grow-from));
     }
+
     to {
         transform: scale(var(--grow-to));
     }

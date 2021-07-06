@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #f63, #f53d2d);
 }
 
@@ -7,7 +7,13 @@ ul {
     padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -18,6 +24,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header__navbar-list {
     list-style: none;
+    margin-bottom: 5px;
 }
 
 .header__navbar-item {
@@ -157,7 +164,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     height: 310px;
 }
 
-.notify__top > p {
+.notify__top>p {
     position: absolute;
     color: var(--black-corlor);
     bottom: 30%;
@@ -390,4 +397,91 @@ hoàn toàn có thể dùng thẻ giả ::before */
     height: 16px;
     margin: 0 16px;
     border-left: 1px solid var(--border-corlor);
+}
+
+/* Header search */
+.header__navbar-search {
+    height: var(--search-height);
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    margin-top: 8px;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__section {
+    display: flex;
+    border-radius: 2px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.header__search {
+    background-color: var(--white-corlor);
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+    margin-top: -24px;
+}
+
+.header__search-icon {
+    font-size: 2.4rem;
+    color: var(--white-corlor);
+    cursor: pointer;
+}
+
+.header__search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-corlor);
+    padding: 0 16px;
+    border-radius: 3px;
+}
+
+.header__search-find {
+    width: 70px;
+    background-color: var(--basic-corlor);
+    color: var(--white-corlor);
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 3px;
+    padding-top: 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.header__search-find:hover {
+    opacity: 0.9;
+}
+
+.header__catalog-list {
+    list-style: none;
+    margin: 5px;
+}
+
+.header__catalog-item {
+    display: inline-block;
+
+}
+
+.header__catalog-link {
+    text-decoration: none;
+    color: var(--white-corlor);
+    font-size: 1.2rem;
+    padding: 0px 4px;
 }
