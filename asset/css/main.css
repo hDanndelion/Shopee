@@ -114,17 +114,6 @@ hoàn toàn có thể dùng thẻ giả ::before */
     display: block;
 }
 
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 .header__navbar-list:last-child .header__navbar-item:first-child {
     position: relative;
 }
@@ -276,17 +265,6 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .item_info-img {
     width: 100%;
-}
-
-@keyframes zoomInOut {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 /* Form DK DN */
