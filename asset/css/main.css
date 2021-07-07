@@ -4,6 +4,7 @@
 }
 
 ul {
+    margin: 0;
     padding: 0;
 }
 
@@ -20,6 +21,7 @@ h6 {
 .header__navbar {
     display: flex;
     justify-content: space-between;
+    padding-top: 8px;
 }
 
 .header__navbar-list {
@@ -35,7 +37,7 @@ h6 {
 .header__navbar-item-link {
     display: inline-block;
     font-size: 1.3rem;
-    color: var(--white-corlor);
+    color: var(--white-color);
     text-decoration: none;
     font-weight: 500;
 }
@@ -71,13 +73,14 @@ Cần position: relative nó (Class .header__navbar-item)
 
 .header__QRcode {
     display: none;
-    width: 160px;
+    width: 195px;
     position: absolute;
     left: 0;
     top: 100%;
     padding-top: 8px;
     animation: fadeIn ease-in-out 0.3s;
     z-index: 99999999;
+    border-radius: 2px;
 }
 
 /* Khi chỉnh QRcode thấp xuống, thay vì padding,
@@ -95,12 +98,14 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__QRcode-apps {
     display: flex;
+    border-radius: 2px;
 }
 
 .header__QRcode-apps div {
     flex: 1;
-    padding: 0 8px;
-    background-color: var(--white-corlor);
+    padding: 0 8px 8px;
+    background-color: var(--white-color);
+    border-radius: 2px;
 }
 
 .header__QRcode-apps-dow img {
@@ -119,6 +124,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__QRcode img {
     display: block;
+    border-radius: 2px;
 }
 
 .header__navbar-list:last-child .header__navbar-item:first-child {
@@ -127,12 +133,13 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__navbar-notify {
     position: absolute;
-    background-color: var(--white-corlor);
+    background-color: var(--white-color);
     border: 1px solid rgb(172, 171, 171);
     right: 0;
     margin-top: 8px;
     width: 400px;
     z-index: 999999999;
+    border-radius: 3px;
 }
 
 .header__navbar-notify::after {
@@ -141,7 +148,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     content: '';
     top: -19px;
     right: 26px;
-    border: var(--white-corlor) solid;
+    border: var(--white-color) solid;
     border-width: 10px 16px;
     border-left-color: transparent;
     border-top-color: transparent !important;
@@ -166,7 +173,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .notify__top>p {
     position: absolute;
-    color: var(--black-corlor);
+    color: var(--black-color);
     bottom: 30%;
     text-align: center;
     width: 100%;
@@ -185,7 +192,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 300;
-    color: var(--black-corlor);
+    color: var(--black-color);
     background-color: #F5F5F5;
 }
 
@@ -215,7 +222,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 }
 
 .notify__list-item {
-    color: var(--black-corlor);
+    color: var(--black-color);
 }
 
 .notify__list-item--viewed {
@@ -231,7 +238,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 .notify__list-item-head,
 .notify__list-item-foot {
     text-decoration: none;
-    color: var(--black-corlor);
+    color: var(--black-color);
     display: block;
     padding: 12px;
 }
@@ -240,7 +247,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     display: flex;
     padding: 8px;
     text-decoration: none;
-    color: var(--black-corlor);
+    color: var(--black-color);
 }
 
 
@@ -277,7 +284,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 /* Form DK DN */
 .auth-form {
     width: 500px;
-    background-color: var(--white-corlor);
+    background-color: var(--white-color);
     border-radius: 7px;
     overflow: hidden;
 }
@@ -297,12 +304,12 @@ hoàn toàn có thể dùng thẻ giả ::before */
 .auth-form__heading {
     font-size: 2.2rem;
     font-weight: 400;
-    color: var(--text-corlor);
+    color: var(--text-color);
 }
 
 .auth-form__switch--btn {
     font-size: 1.6rem;
-    color: var(--basic-corlor);
+    color: var(--basic-color);
     font-weight: 400;
     cursor: pointer;
 }
@@ -317,7 +324,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     margin-bottom: 16px;
     padding: 0 12px;
     font-size: 1.4rem;
-    border: 1px solid var(--border-corlor);
+    border: 1px solid var(--border-color);
     border-radius: 2px;
     outline: none;
 }
@@ -337,7 +344,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .auth-form__policy-link {
     text-decoration: none;
-    color: var(--basic-corlor);
+    color: var(--basic-color);
 }
 
 .auth-form__controls {
@@ -366,7 +373,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .auth-form__socials--fb,
 .auth-form__socials--icon {
-    color: var(--white-corlor) !important;
+    color: var(--white-color) !important;
 }
 
 .auth-form__socials--fb {
@@ -389,14 +396,14 @@ hoàn toàn có thể dùng thẻ giả ::before */
 .auth-form__help-link {
     font-size: 1.4rem;
     text-decoration: none;
-    color: var(--basic-corlor);
+    color: var(--basic-color);
 }
 
 .auth-form__sepa {
     display: block;
     height: 16px;
     margin: 0 16px;
-    border-left: 1px solid var(--border-corlor);
+    border-left: 1px solid var(--border-color);
 }
 
 /* Header search */
@@ -410,6 +417,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__logo {
     width: 200px;
+    margin-top: -12px;
 }
 
 .header__logo-img {
@@ -424,10 +432,11 @@ hoàn toàn có thể dùng thẻ giả ::before */
 }
 
 .header__search {
-    background-color: var(--white-corlor);
+    background-color: var(--white-color);
     height: 40px;
     border-radius: 2px;
     display: flex;
+    position: relative;
 }
 
 .header__cart {
@@ -438,7 +447,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__search-icon {
     font-size: 2.4rem;
-    color: var(--white-corlor);
+    color: var(--white-color);
     cursor: pointer;
 }
 
@@ -448,15 +457,15 @@ hoàn toàn có thể dùng thẻ giả ::before */
     border: none;
     outline: none;
     font-size: 1.4rem;
-    color: var(--text-corlor);
+    color: var(--text-color);
     padding: 0 16px;
     border-radius: 3px;
 }
 
 .header__search-find {
     width: 70px;
-    background-color: var(--basic-corlor);
-    color: var(--white-corlor);
+    background-color: var(--basic-color);
+    color: var(--white-color);
     text-align: center;
     font-size: 1.6rem;
     margin: 3px;
@@ -481,7 +490,47 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .header__catalog-link {
     text-decoration: none;
-    color: var(--white-corlor);
+    color: var(--white-color);
     font-size: 1.2rem;
     padding: 0px 4px;
+}
+
+/* Search history */
+.header__search-history {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 80px);
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+    overflow: hidden;
+    background-color: var(--white-color);
+    margin-top: 5px;
+    display: none;
+}
+
+.header__search-history-item:hover {
+    background-color: #fafafa;
+}
+
+.header__search-history-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 10px;
+    width: 100%;
+    display: block;
+}
+
+.header__search-history-link--head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search-history-img {
+    height: 24px;
+}
+
+.header__search-input:focus ~ .header__search-history {
+    display: block;
 }

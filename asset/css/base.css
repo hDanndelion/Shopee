@@ -1,9 +1,9 @@
 :root {
-    --white-corlor: #fff;
-    --black-corlor: #000;
-    --text-corlor: #333;
-    --basic-corlor: #ee5234;
-    --border-corlor: #dbdbdb;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --basic-color: #ee5234;
+    --border-color: #dbdbdb;
     --narbar-height: 34px;
     --header-height: 120px;
     --search-height: calc(var(--header-height) - var(--narbar-height));
@@ -72,8 +72,8 @@ html {
     font-size: 1.4rem;
     padding: 0 12px;
     cursor: pointer;
-    color: var(--text-corlor);
-    background-color: var(--white-corlor);
+    color: var(--text-color);
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +84,8 @@ html {
 }
 
 .btn.btn--primary {
-    color: var(--white-corlor);
-    background-color: var(--basic-corlor);
+    color: var(--white-color);
+    background-color: var(--basic-color);
 
 }
 
