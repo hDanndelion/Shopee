@@ -72,7 +72,7 @@
                             <div class="header__navbar-notify header__navbar-notify--logged">
                                 <ul class="notify__list">
                                     <li class="notify__list-item">
-                                        <a class="notify__list-item-head" href="">Thông báo mới nhận</a>
+                                        <a class="notify__list-item-head">Thông báo mới nhận</a>
                                     </li>
                                     <li class="notify__list-item notify__list-item--viewed"><a href=""
                                             class="notify__list-item-link">
@@ -182,7 +182,47 @@
                     </div>
 
                     <div class="header__cart">
-                        <i class="header__search-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-wrap-notice">0</span>
+
+                            <!-- No cart -->
+                            <!-- header__cart-content--noCart -->
+                            <div class="header__cart-content">
+                                <img src="./asset/img/no_cart.png" alt="" class="header__cart-noCart-img">
+                                <p class="header__cart-noCart-msg">Chưa có sản phẩm</p>
+
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item-head"><a class="header__cart-link">
+                                        Sản Phẩm Mới Thêm
+                                    </a></li>
+                                    <li class="header__cart-item"><a href="" class="header__cart-link">
+                                        <img src="./asset/img/img-sp_cart--banhoc.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <h3 class="header__cart-item-name">Bàn học gấp gọn thông minh</h3>
+                                            <p class="header__cart-item-value">₫58.000</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="header__cart-item"><a href="" class="header__cart-link">
+                                        <img src="./asset/img/img-sp_cart--cuongluc.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <h3 class="header__cart-item-name">TẶNG BỘ KIT VỆ SINH</h3>
+                                            <p class="header__cart-item-value">₫5.000</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="header__cart-item"><a href="" class="header__cart-link">
+                                        <img src="./asset/img/img-sp_cart--earblu.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <h3 class="header__cart-item-name">Tai nghe True Wireless Amoi F9</h3>
+                                            <p class="header__cart-item-value">₫165.000</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="header__cart-item-foot"><a class="header__cart-link">
+                                        <button class="btn btn--primary">Xem Giỏ Hàng</button>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
