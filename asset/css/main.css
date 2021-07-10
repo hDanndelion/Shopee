@@ -27,6 +27,7 @@ h6 {
 .header__navbar-list {
     list-style: none;
     margin-bottom: 5px;
+    display: flex;
 }
 
 .header__navbar-item {
@@ -35,11 +36,85 @@ h6 {
 
 .header__navbar-item,
 .header__navbar-item-link {
-    display: inline-block;
     font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 500;
+}
+
+.header__navbar-user {
+    position: relative;
+}
+
+.header__navbar-user:hover .header__navbar-user-list  {
+    display: block;
+}
+
+.header__navbar-item-user {
+    display: flex;
+    justify-content: center;
+}
+
+.header__navbar-item-img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.header__navbar-item-name {
+    margin-left: 4px;
+    font-size: 1.3rem;
+}
+
+.header__navbar-user-list {
+    position: absolute;
+    background-color: var(--white-color);
+    list-style: none;
+    right: 8px;
+    width: 150px;
+    top: calc(100% + 8px);
+    z-index: 99999;
+    display: none;
+    border-radius: 2px;
+}
+
+.header__navbar-user-list::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -20px;
+    right: 10px;
+    border: var(--white-color) solid;
+    border-width: 12px 20px;
+    border-left-color: transparent;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    cursor: pointer;
+}
+
+.header__navbar-user-list::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -14px;
+    right: -1px;
+    width: 65%;
+    height: 15px;
+}
+
+.header__navbar-user-link {
+    color: var(--text-color);
+    padding: 12px;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header__navbar-user-link:hover {
+    background-color: #f8f8f8;
+    color: #00bfa5;
+    border-radius: 2px;
 }
 
 .header__navbar-item-link:hover {
