@@ -892,3 +892,185 @@ hoàn toàn có thể dùng thẻ giả ::before */
 .home-filter__page-btn--disable .home-filter__page-icon {
     color: #ccc;
 }
+
+/* item */
+.home-product {
+    margin-bottom: 10px;
+}
+
+.home-product-item {
+    background-color: var(--white-color);
+    margin-top: 10px;
+    position: relative;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    display: block;
+    text-decoration: none;
+}
+
+.home-product-item:hover {
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-product-item-pad10 {
+    padding: 10px;
+}
+
+.home-product-item_name-wrap {
+    height: 6.4rem;
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    /* Cách này thì k phải tất cả trình duyệt đều hỗ trợ */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    Đây cũng là 1 cách nhưng áp dụng cho 1 dòng thôiiii */
+    margin-bottom: 4px;
+}
+
+.home-product-item-promotion {
+    color: var(--basic-color);
+    border: 1px solid;
+    display: inline-block;
+    padding: 0 2px;
+    margin-bottom: 6px;
+}
+
+.home-product-item__pride {
+    margin-bottom: 8px;
+}
+
+.home-product-item__pride-old {
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.home-product-item__pride-current {
+    font-size: 1.6rem;
+    color: var(--basic-color);
+}
+
+.home-product-item__pride-freeShip {
+    float: right;
+}
+
+.home-product-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.home-product-item__like {
+    font-size: 1.1rem;
+}
+
+i.home-product-item__like-icon--able {
+    display: none;
+    color: var(--basic-color);
+}
+
+.home-product-item__liked .home-product-item__like-icon--able {
+    display: inline-block;
+}
+
+.home-product-item__liked .home-product-item__like-icon--disable {
+    display: none;
+}
+
+.home-product-item__rate {
+    margin: -1px 0 0 auto;
+    color: rgba(0,0,0,.26);
+    font-size: 0.9rem;
+}
+
+.home-product-item__sold {
+    font-size: 1.2rem;
+    margin-left: 4px;
+}
+
+.home-product-item__origin {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.65);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-product-item__favourite {
+    position: absolute;
+    top: 4px;
+    left: -4px;
+    background-color: currentColor;
+    color: var(--basic-color);
+    font-size: 1.2rem;
+    padding: 0 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.home-product-item__favourite span {
+    color: var(--white-color);
+}
+
+.home-product-item__favourite::before {
+    content: "";
+    position: absolute;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent ;
+    bottom: -3px;
+    left: 0px;
+    filter: brightness(60%);
+}
+
+.home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 32px;
+    background-color: rgba(255,212,36,.9);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-top: 2px;
+}
+
+.home-product-item__sale-off::before {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    border-color: transparent rgba(255,212,36,.9);
+    border-style: solid;
+    border-width: 0 18px 4px;
+}
+
+.home-product-item__sale-off-percent {
+    color: var(--basic-color);
+}
+
+.home-product-item__sale-off-label {
+    display: block;
+    color: var(--white-color);
+}
