@@ -76,6 +76,7 @@ h6 {
     z-index: 99999;
     display: none;
     border-radius: 2px;
+    box-shadow: 0 0 3px 3px rgb(0 0 0 / 10%);
 }
 
 .header__navbar-user-list::after {
@@ -156,10 +157,21 @@ Cần position: relative nó (Class .header__navbar-item)
     position: absolute;
     left: 0;
     top: 100%;
-    padding-top: 8px;
+    margin-top: 8px;
     animation: fadeIn ease-in-out 0.3s;
     z-index: 99999999;
     border-radius: 2px;
+    box-shadow: 0 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+.header__QRcode::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -9px;
+    left: 0;
+    width: 50%;
+    height: 10px;
 }
 
 /* Khi chỉnh QRcode thấp xuống, thay vì padding,
@@ -633,6 +645,8 @@ hoàn toàn có thể dùng thẻ giả ::before */
     transform-origin: calc(100% - 40px) top;
     animation: zoomInOut ease-in 0.2s;
     will-change: opacity, transform;
+    z-index: 1;
+
 }
 
 .header__cart-content--noCart {
@@ -708,10 +722,10 @@ hoàn toàn có thể dùng thẻ giả ::before */
     cursor: pointer;
 }
 
-/* Cart */
+
 .header__cart-list {
-    max-height: 700px;
-    overflow: auto;
+    max-height: 60vh;
+    overflow-y: auto;
     list-style: none;
 }
 
@@ -750,6 +764,12 @@ hoàn toàn có thể dùng thẻ giả ::before */
     color: var(--text-color);
     font-weight: 300;
     font-size: 1.3rem;
+    height: 3.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
 }
 
 .header__cart-item-value {
@@ -798,6 +818,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
 
 .category-item {
     position: relative;
+    padding-bottom: 4px;
 }
 
 .category-item--active .category-item__link {
@@ -810,7 +831,7 @@ hoàn toàn có thể dùng thẻ giả ::before */
     position: absolute;
     border: 4px solid;
     border-color: transparent transparent transparent var(--basic-color);
-    top: 50%;
+    top: 15px;
     transform: translateY(-50%);
     left: 6px;
 }
@@ -820,7 +841,13 @@ hoàn toàn có thể dùng thẻ giả ::before */
     color: var(--text-color);
     font-size: 1.6rem;
     padding: 8px 20px;
-    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    max-height: 4rem;
+    line-height: 1.6rem;
 }
 
 /* home */
@@ -1073,4 +1100,200 @@ i.home-product-item__like-icon--able {
 .home-product-item__sale-off-label {
     display: block;
     color: var(--white-color);
+}
+
+.home-product__pagination {
+    margin: 48px 0px 32px 0px;
+}
+
+/* Footer */
+.footer {
+    border-top: 4px solid var(--basic-color);
+    background-color: #fbfbfb;
+}
+
+.footer__wrap {
+    margin-top: 32px;
+    padding-bottom: 28px;
+    border-top: 2px solid #E8E8E8;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.footer__heading {
+    font-size: 1.4rem;
+    padding: 40px 0 24px 0;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__item {
+    margin: 8px 0;
+}
+
+.footer__item:hover .footer__link {
+    color: var(--basic-color);
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #737373;
+    font-size: 1.2rem;
+}
+
+.footer__listPay,
+.footer__listShip {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__itemPay,
+.footer__itemShip {
+    width: 55px;
+    height: 29px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.footer__icon {
+    background-image: url(/asset/img/footer_icon.png);
+}
+
+.footer__icon-visa {
+    width: 55px;
+    height: 18px;
+    background-size: 1390.909090909091% 1194.4444444444443%;
+    background-position: 73.52112676056338% 5.0761421319796955%;
+}
+
+.footer__icon-mtc {
+    width: 55px;
+    height: 29px;
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 44.50704225352113% 5.376344086021505%;
+}
+
+.footer__icon-jcb {
+    width: 55px;
+    height: 23px;
+    background-size: 1390.909090909091% 934.7826086956521%;
+    background-position: 37.183098591549296% 30.729166666666668%;
+}
+
+.footer__icon-mex {
+    width: 55px;
+    height: 24px;
+    background-size: 1530% 977.2727272727273%;
+    background-position: 11.188811188811188% 5.181347150259067%;
+}
+
+.footer__icon-cod {
+    width: 50px;
+    height: 29px;
+    background-size: 1530% 741.3793103448276%;
+    background-position: 79.3006993006993% 25.806451612903224%;
+}
+
+.footer__icon-installment {
+    width: 55px;
+    height: 29px;
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 79.85915492957747% 52.1505376344086%;
+}
+
+.footer__icon-shopeepay {
+    width: 55px;
+    height: 12px;
+    background-size: 765% 1131.578947368421%;
+    background-position: 63.00751879699248% 24.489795918367346%;
+}
+
+.footer__icon-express {
+    width: 55px;
+    height: 10px;
+    background-size: 689.1891891891892% 1194.4444444444443%;
+    background-position: 59.78593272171254% 5.0761421319796955%;
+}
+
+.footer__icon-ghtk {
+    width: 55px;
+    height: 18px;
+    background-size: 1390.909090909091% 1194.4444444444443%;
+    background-position: 19.295774647887324% 51.776649746192895%;
+}
+
+.footer__icon-ghn {
+    width: 55px;
+    height: 29px;
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 8.732394366197184% 54.83870967741935%;
+}
+
+.footer__icon-viettelpost {
+    width: 55px;
+    height: 40px;
+    background-size: 597.65625% 167.96875%;
+    background-position: 65.77708006279435% 100%;
+}
+
+.footer__icon-vnpost {
+    width: 55px;
+    height: 27px;
+    background-size: 1390.909090909091% 796.2962962962963%;
+    background-position: 100% 5.319148936170213%;
+}
+
+.footer__icon-jandt {
+    width: 55px;
+    height: 16px;
+    background-size: 1390.909090909091% 1343.75%;
+    background-position: 84.08450704225352% 5.025125628140704%;
+}
+
+.footer__icon-grap {
+    width: 55px;
+    height: 15px;
+    background-size: 570.8955223880597% 741.3793103448276%;
+    background-position: 25.673534072900157% 5.376344086021505%;
+}
+
+.footer__icon-now {
+    width: 38px;
+    height: 32px;
+    background-size: 956.25% 268.75%;
+    background-position: 46.13138686131387% 77.77777777777777%;
+}
+
+.footer__icon-ninja {
+    width: 50px;
+    height: 20px;
+    background-size: 1275% 826.9230769230769%;
+    background-position: 48.08510638297872% 31.21693121693122%;
+}
+
+.footer__icon-best {
+    width: 55px;
+    height: 22px;
+    background-size: 1062.5% 716.6666666666666%;
+    background-position: 10.1010101010101% 28.10810810810811%;
+}
+
+.footer__item-icon {
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+.footer__QRcode {
+    display: block;
+    position: inherit;
+}
+
+.footer__text {
+    margin: auto;
+    font-size: 1.2rem;
+    color: #787878;
+    padding: 32px 0;
 }
