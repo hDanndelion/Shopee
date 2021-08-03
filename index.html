@@ -10,14 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 
 <body>
     <div class="shoppe">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobileipad">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">
                             <a class="header__navbar-item-link" href="">Kênh Người Bán</a></li>
@@ -183,7 +185,7 @@
                             </div>
                             <i class="header__search-find fas fa-search"></i>
                         </div>
-                        <div class="header__catalog">
+                        <div class="header__catalog hide-on-mobileipad">
                             <ul class="header__catalog-list">
                                 <li class="header__catalog-item"><a href="" class="header__catalog-link">Váy</a></li>
                                 <li class="header__catalog-item"><a href="" class="header__catalog-link">Áo Phông</a>
@@ -253,7 +255,7 @@
         </header>
 
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -278,7 +280,7 @@
                     </div>
 
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobileipad">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ Biến</button>
                             <button class="home-filter__btn btn">Mới Nhất</button>
@@ -660,7 +662,7 @@
         </div>
 
         <div class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="footer__wrap">
                 <div class="grid__row">
                         <div class="grid__column-2of10">
