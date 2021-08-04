@@ -6,6 +6,10 @@
 
     .header {
         height: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9999999999;
     }
 
     .header__navbar-search {
@@ -28,6 +32,25 @@
 
     .header__cart {
         width: initial;
+    }
+
+    .header__cart-content {
+        position: fixed;
+        top: 86px;
+        width: 100%;
+        left: 0;
+    }
+
+    .header__cart-content::after {
+        display: none;
+    }
+
+    .header__QRcode {
+        width: initial;
+    }
+
+    .container {
+        margin-top: 86px;
     }
 }
 
