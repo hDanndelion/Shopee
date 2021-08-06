@@ -152,6 +152,9 @@
                 </nav>
 
                 <div class="header__navbar-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search"><i
+                            class="header__mobile-search-icon fas fa-search"></i></label>
+
                     <div class="header__logo">
                         <a href="" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -163,6 +166,8 @@
                             </svg>
                         </a>
                     </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
 
                     <div class="header__section">
                         <div class="header__search">
@@ -185,6 +190,7 @@
                             </div>
                             <i class="header__search-find fas fa-search"></i>
                         </div>
+
                         <div class="header__catalog hide-on-mobileipad">
                             <ul class="header__catalog-list">
                                 <li class="header__catalog-item"><a href="" class="header__catalog-link">Váy</a></li>
@@ -222,7 +228,9 @@
                                             <img src="./asset/img/img-sp_cart--banhoc.jpg" alt=""
                                                 class="header__cart-item-img">
                                             <div class="header__cart-item-info">
-                                                <h3 class="header__cart-item-name">Bàn học gấp gọn thông minh Bàn học gấp gọn thông minh Bàn học gấp gọn thông minh Bàn học gấp gọn thông minh Bàn học gấp gọn thông minh</h3>
+                                                <h3 class="header__cart-item-name">Bàn học gấp gọn thông minh Bàn học
+                                                    gấp gọn thông minh Bàn học gấp gọn thông minh Bàn học gấp gọn thông
+                                                    minh Bàn học gấp gọn thông minh</h3>
                                                 <p class="header__cart-item-value">₫58.000</p>
                                             </div>
                                         </a></li>
@@ -245,13 +253,21 @@
                                 </ul>
 
                                 <div class="header__cart-item-foot"><a class="header__cart-link">
-                                            <button class="btn btn--primary">Xem Giỏ Hàng</button>
-                                </a></div>
+                                        <button class="btn btn--primary">Xem Giỏ Hàng</button>
+                                    </a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <ul class="header__sortBar ">
+                <li class="header__sortBar-item"><a href="" class="header__sortBar-link">Liên quan</a></li>
+                <li class="header__sortBar-item header__sortBar-item--active"><a href=""
+                        class="header__sortBar-link">Mới nhất</a></li>
+                <li class="header__sortBar-item"><a href="" class="header__sortBar-link">Bán chạy</a></li>
+                <li class="header__sortBar-item"><a href="" class="header__sortBar-link">Giá</a></li>
+            </ul>
         </header>
 
         <div class="container">
@@ -264,7 +280,8 @@
 
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Sách Tiếng Anh Sách Tiếng Anh Sách Tiếng Anh Sách Tiếng Anh Sách Tiếng Anh</a>
+                                    <a href="" class="category-item__link">Sách Tiếng Anh Sách Tiếng Anh Sách Tiếng Anh
+                                        Sách Tiếng Anh Sách Tiếng Anh</a>
                                 </li>
                                 <li class="category-item">
                                     <a href="" class="category-item__link">Sách Tiếng Pháp</a>
@@ -323,27 +340,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -365,27 +405,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -407,27 +470,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -449,27 +535,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -491,27 +600,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -533,27 +665,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -575,27 +730,50 @@
                                         <div class="home-product-item-pad10">
                                             <div class="home-product-item_name-wrap">
                                                 <h4 class="home-product-item__name">Sách - Tâm An Ắt Bình An</h4>
-                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000</div>
+                                                <div class="home-product-item-promotion">Mua 2 sản phẩm giá ₫259.000
+                                                </div>
                                             </div>
                                             <div class="home-product-item__pride">
                                                 <span class="home-product-item__pride-old">₫92.000</span>
                                                 <span class="home-product-item__pride-current">₫78.200</span>
-                                                <span class="home-product-item__pride-freeShip"><svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg></span>
+                                                <span class="home-product-item__pride-freeShip"><svg height="12"
+                                                        viewBox="0 0 20 12" width="20"
+                                                        class="shopee-svg-icon icon-free-shipping">
+                                                        <g fill="none" fill-rule="evenodd" transform="">
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                                width="12" x="4"></rect>
+                                                            <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5"
+                                                                y=".5"></rect>
+                                                            <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1"
+                                                                width="7" x="13" y="2"></rect>
+                                                            <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5"
+                                                                y="2.5"></rect>
+                                                            <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                            <path
+                                                                d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                fill="#fff"></path>
+                                                            <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                            <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                            <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                        </g>
+                                                    </svg></span>
                                             </div>
                                             <div class="home-product-item__action">
                                                 <span class="home-product-item__like ">
                                                     <i class="home-product-item__like-icon--disable far fa-heart"></i>
                                                     <i class="home-product-item__like-icon--able fas fa-heart"></i>
                                                 </span>
-                                                    <div class="home-product-item__rate">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">Đã bán 4,7k</span>
-                                                
+                                                <div class="home-product-item__rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 4,7k</span>
+
                                             </div>
                                             <div class="home-product-item__origin">
                                                 <span class="home-product-item__origin-name">Hà Nội</span>
@@ -659,12 +837,14 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
 
         <div class="footer">
             <div class="grid wide">
                 <div class="footer__wrap">
-                <div class="grid__row">
+                    <div class="grid__row">
                         <div class="grid__column-2of10">
                             <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
                             <ul class="footer__list">
@@ -681,22 +861,25 @@
                                 <li class="footer__item"><a href="" class="footer__link">Chính Sách Bảo Hành</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="grid__column-2of10">
                             <h3 class="footer__heading">VỀ SHOPEE</h3>
                             <ul class="footer__list">
-                                <li class="footer__item"><a href="" class="footer__link">Giới Thiệu Về Shopee Việt Nam</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Giới Thiệu Về Shopee Việt
+                                        Nam</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Tuyển Dụng</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Điều Khoản Shopee</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Chính Sách Bảo Mật</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Chính Hãng</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Kênh Người Bán</a></li>
                                 <li class="footer__item"><a href="" class="footer__link">Flash Sales</a></li>
-                                <li class="footer__item"><a href="" class="footer__link">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
-                                <li class="footer__item"><a href="" class="footer__link">Liên Hệ Với Truyền Thông</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Chương Trình Tiếp Thị Liên Kết
+                                        Shopee</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Liên Hệ Với Truyền Thông</a>
+                                </li>
                             </ul>
                         </div>
-    
+
                         <div class="grid__column-2of10">
                             <h3 class="footer__heading">THANH TOÁN</h3>
                             <ul class="footer__list footer__listPay">
@@ -722,7 +905,7 @@
                                     <div class="footer__icon footer__icon-shopeepay"></div>
                                 </li>
                             </ul>
-    
+
                             <h3 class="footer__heading">ĐƠN VỊ VẬN CHUYỂN</h3>
                             <ul class="footer__list footer__listShip">
                                 <li class="footer__itemShip">
@@ -757,36 +940,41 @@
                                 </li>
                             </ul>
                         </div>
-    
+
                         <div class="grid__column-2of10">
                             <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
                             <ul class="footer__list">
                                 <li class="footer__item"><a href="" class="footer__link">
-                                    <i class="footer__item-icon fab fa-facebook"></i>
-                                    Facebook
-                                </a></li>
+                                        <i class="footer__item-icon fab fa-facebook"></i>
+                                        Facebook
+                                    </a></li>
                                 <li class="footer__item"><a href="" class="footer__link">
-                                    <i class="footer__item-icon fab fa-instagram"></i>
-                                    Instagram
-                                </a></li>
+                                        <i class="footer__item-icon fab fa-instagram"></i>
+                                        Instagram
+                                    </a></li>
                                 <li class="footer__item"><a href="" class="footer__link">
-                                    <i class="footer__item-icon fab fa-linkedin"></i>
-                                    Linkedin
-                                </a></li>
+                                        <i class="footer__item-icon fab fa-linkedin"></i>
+                                        Linkedin
+                                    </a></li>
                             </ul>
                         </div>
-    
+
                         <div class="grid__column-2of10">
                             <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                             <div class="footer__QRcode header__QRcode">
-                                <img width="100%" src="./asset/img/QRcode_shopee.png" alt="QR code" class="header__QRcode-img">
+                                <img width="100%" src="./asset/img/QRcode_shopee.png" alt="QR code"
+                                    class="header__QRcode-img">
                                 <div class="header__QRcode-apps">
                                     <div>
-                                        <a href="" class="header__QRcode-apps-dow"><img src="./asset/img/download_appstore.png" alt="Download for IOS"></a>
-                                        <a href="" class="header__QRcode-apps-dow"><img src="./asset/img/download_appgallery.png" alt="Download for Gallery"></a>
+                                        <a href="" class="header__QRcode-apps-dow"><img
+                                                src="./asset/img/download_appstore.png" alt="Download for IOS"></a>
+                                        <a href="" class="header__QRcode-apps-dow"><img
+                                                src="./asset/img/download_appgallery.png"
+                                                alt="Download for Gallery"></a>
                                     </div>
                                     <div>
-                                        <a href="" class="header__QRcode-apps-dow"><img src="./asset/img/download_chplay.png" alt="Download for Android"></a>
+                                        <a href="" class="header__QRcode-apps-dow"><img
+                                                src="./asset/img/download_chplay.png" alt="Download for Android"></a>
                                     </div>
                                 </div>
                             </div>
@@ -795,7 +983,9 @@
                 </div>
 
                 <div class="grid__row">
-                    <p class="footer__text">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                    <p class="footer__text">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường
+                        Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email:
+                        cskh@hotro.shopee.vn</p>
                 </div>
             </div>
         </div>

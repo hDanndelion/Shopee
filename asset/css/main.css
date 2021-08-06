@@ -506,6 +506,16 @@ hoàn toàn có thể dùng thẻ giả ::before */
     margin-top: 8px;
 }
 
+.header__mobile-search {
+    font-size: 2.6rem;
+    color: #fff;
+
+}
+
+.header__search-checkbox:checked~.header__section {
+    display: flex;
+}
+
 .header__logo {
     width: 200px;
     margin-top: -12px;
@@ -785,6 +795,55 @@ hoàn toàn có thể dùng thẻ giả ::before */
     background-color: #f05d40;
 }
 
+/* Header sort bar */
+.header__sortBar {
+    position: fixed;
+    top: var(--search-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sortBar-height);
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.header__sortBar-item {
+    flex: 1;
+}
+
+.header__sortBar-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    height: 100%;
+    line-height: var(--header-sortBar-height);
+    text-align: center;
+    position: relative;
+}
+
+.header__sortBar-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+}
+
+.header__sortBar-item--active {
+    color: var(--basic-color);
+}
+
+.header__sortBar-item:first-child .header__sortBar-link::before {
+    display: none;
+}
+
 /* Container */
 .container {
     background-color: #f5f5f5;
@@ -1028,7 +1087,7 @@ i.home-product-item__like-icon--able {
 
 .home-product-item__rate {
     margin: -1px 0 0 auto;
-    color: rgba(0,0,0,.26);
+    color: rgba(0, 0, 0, .26);
     font-size: 0.9rem;
 }
 
@@ -1039,7 +1098,7 @@ i.home-product-item__like-icon--able {
 
 .home-product-item__origin {
     font-size: 1.2rem;
-    color: rgba(0,0,0,.65);
+    color: rgba(0, 0, 0, .65);
     display: flex;
     justify-content: flex-end;
 }
@@ -1064,7 +1123,7 @@ i.home-product-item__like-icon--able {
     content: "";
     position: absolute;
     border-top: 3px solid currentColor;
-    border-left: 3px solid transparent ;
+    border-left: 3px solid transparent;
     bottom: -3px;
     left: 0px;
     filter: brightness(60%);
@@ -1076,7 +1135,7 @@ i.home-product-item__like-icon--able {
     right: 0;
     width: 36px;
     height: 32px;
-    background-color: rgba(255,212,36,.9);
+    background-color: rgba(255, 212, 36, .9);
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -1088,7 +1147,7 @@ i.home-product-item__like-icon--able {
     content: "";
     bottom: -4px;
     left: 0;
-    border-color: transparent rgba(255,212,36,.9);
+    border-color: transparent rgba(255, 212, 36, .9);
     border-style: solid;
     border-width: 0 18px 4px;
 }

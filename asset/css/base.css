@@ -7,6 +7,7 @@
     --narbar-height: 34px;
     --header-height: 120px;
     --search-height: calc(var(--header-height) - var(--narbar-height));
+    --header-sortBar-height: 46px;
 }
 
 * {
@@ -245,10 +246,7 @@ html {
 }
 
 @keyframes toUP {
-    from {
+    from {}
 
-    }
-    to {
-        
-    }
+    to {}
 }
