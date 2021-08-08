@@ -22,6 +22,10 @@ html {
     box-sizing: border-box;
 }
 
+.shoppe {
+    overflow: hidden;
+}
+
 /* Responsive */
 .grid {
     width: 1200px;

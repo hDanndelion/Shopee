@@ -108,6 +108,20 @@
         width: calc(100% + 26px);
     }
 
+    .pagination-item {
+        margin-right: 0;
+    }
+
+    .pagination-item__link {
+        min-width: 36px;
+        font-size: 1.8rem;
+        --height: 29px;
+    }
+
+    .content {
+        margin: 0 4px;
+    }
+
     @keyframes mobileSearch_toDown {
         from {}
 
